@@ -1,0 +1,7 @@
+.custom-toast {
+    animation: toast-in-right 0.1s, toast-out-right 0.1s 2.4s;
+  }
+
+  .custom-toast-container {
+      transition: opacity 0.1s ease-in-out;
+  }

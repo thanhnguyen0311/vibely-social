@@ -1,0 +1,13 @@
+.preloader {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: transparent;
+    -webkit-animation: fadeinout 2s linear forwards;
+    animation: fadeinout 2s linear forwards;
+  }
+  
+  @keyframes fadeinout {
+    100% { opacity: 0; }
+    50% { opacity: 1; }
+  }

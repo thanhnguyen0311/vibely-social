@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+::selection{
+  color: #fff;
+  background: #1a81ff;
+}
+
+.dialog-post{
+  width: 500px;
+  background: #fff;
+  border-radius: 10px;
+  transition: height 0.2s ease;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  display: flex;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+.dialog-post::-webkit-scrollbar{
+  width: 10px;
+  height: 10px;
+  
+}
+.dialog-post::-webkit-scrollbar-thumb{
+  background: linear-gradient(to bottom right, #aeb6b6 0%, #bdc0c0 100%);
+  border-radius: 5px;
+}
+
+
+@media (max-width: 500px){
+  .dialog-post{
+    overflow: visible;
+    scale: 0.8;
+  }
+}
+
+.dialog-post .dialog-post-wrapper section{
+  width: 500px;
+  background: #fff;
+}
+
+.dialog-post img{
+  cursor: pointer;
+}
+
+.dialog-post .post-content{
+  transition: margin-left 0.18s ease;
+}
+
+.dialog-post.active .post-content{
+  margin-left: -500px;
+}
+
+.post-content .header-dialog{
+  font-size: 22px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  text-align: center;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.post-content form{
+  margin: 20px 25px;
+}
+
+.post-content form .content-dialog,
+.audience .list li .column{
+  display: flex;
+  align-items: center;
+}
+
+.post-content form .content-dialog img{
+  cursor: default;
+  max-width: 52px;
+}
+
+.post-content form .content-dialog .details{
+  margin: -3px 0 0 12px;
+}
+
+form .content-dialog .details p{
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.content-dialog .details .privacy{
+  height: 30px;
+  cursor: pointer;
+  padding: 0 10px 0 10px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: -10px;
+  border-radius: 10px;
+  border: #e2e5e9;
+  max-width: 110px;
+  background: #e9e9ea;
+}
+
+.details .privacy option span{
+  font-size: 15px;
+  margin-top: 1px;
+  font-weight: 500;
+}
+
+.details .privacy option {
+  border: #ffffff;
+  background: #f2f1f1;
+}
+
+.details .privacy option span i:last-child{
+  font-size: 13px;
+  margin-left: 1px;
+}
+
+form :where(textarea, button){
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+form textarea{
+  resize: none;
+  font-size: 18px;
+  margin-top: 30px;
+  height: 150px;
+}
+form textarea::-webkit-scrollbar{
+  width: 15px;
+}
+
+
+form textarea::placeholder{
+  color: #858585;
+}
+
+form textarea:focus::placeholder{
+  color: #b3b3b3;
+}
+
+form :where(.theme-emoji, .options){
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.theme-emoji img:last-child{
+  max-width: 24px;
+}
+
+form .options{
+  height: 57px;
+  margin: 15px 0;
+  padding: 0 15px;
+  border-radius: 7px;
+  border: 1px solid #B9B9B9;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+form .options :where(.list-items-post, li),
+.audience :where(.arrow-back, .icon, li .radio){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form .options p{
+  color: #595959;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: default;
+}
+
+form .options .list-items-post{
+  list-style: none;
+  display: -webkit-box;
+}
+
+.options .list-items-post li{
+  height: 42px;
+  width: 42px;
+  margin: 0 1px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.options .list-items-post li:hover{
+  background: #f0f1f4;
+}
+
+.options .list-items-post li img{
+  width: 23px;
+}
+
+form .button-post{
+  height: 63px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #BCC0C4;
+  cursor: no-drop;
+  border-radius: 7px;
+  background: #e2e5e9;
+  transition: all 0.3s ease;
+}
+
+form textarea:valid ~ .button-post{
+  color: #fff;
+  cursor: pointer;
+  background: #0ec4a6;
+}
+
+form textarea:valid ~ .button-post:hover{
+  background: #0d7d6a;
+}
+
+#upload-btn {
+  background: #f3f1f1;
+}
+
+#upload-btn:hover {
+  background: #dedddd;
+}
+
+/* .MuiDialog-root{
+  cursor: pointer;
+} */
+
+/* .MuiDialog-container {
+  display: none;
+} */
+.preview-upload {
+  pointer-events: none;
+  cursor: not-allowed;
+}

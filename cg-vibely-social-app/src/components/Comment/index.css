@@ -1,0 +1,22 @@
+#comment-section {
+  padding: 8px;
+  --bs-border-opacity: 0.4;
+    /* --bs-border-opacity: 0.4;
+    border-color: rgba(var(--bs-success-rgb), var(--bs-border-opacity)) !important; */
+}
+
+.comment-box {
+  width: 90%;
+  margin-top: 0px;
+  height: fit-content;
+}
+.comment-input{
+  border: none;
+  outline: none;
+  width: 90%;
+  resize: none;
+  overflow: hidden;
+  height: 40px;
+  transition: transform 0.3s ease ;
+  margin-top: 0
+}

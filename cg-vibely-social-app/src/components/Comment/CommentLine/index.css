@@ -1,0 +1,26 @@
+.comment-wrap {
+    width: 85%;
+    max-width: 550px;
+    margin-left: 2px;
+    background-color: rgb(237, 244, 245);
+}
+
+
+  .replyshow-btn {
+    position: relative;
+    width: 140px;
+    margin-left: 40px;
+    padding-left: 15px;
+  }
+
+  .edit-box {
+    width: 50px;
+    display: flex;
+    margin-left: -10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .edit-btn {
+    scale: 0.9;
+    padding: 4px;
+  }

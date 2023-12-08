@@ -1,0 +1,23 @@
+div .tooltip-inner{
+    background-color: #be4b49;
+    border-left-color: #7e0e0e;
+}
+div .bs-tooltip-start {
+    background-color: #be4b49;
+    color: #be4b49;
+}
+.tooltip .tooltip-arrow {
+    --bs-tooltip-bg: #be4b49;
+}
+.tooltip-bottom .tooltip-arrow {
+    bottom: -5px;
+}
+.text-blue-gradiant { text: linear-gradient(to right, #0575e6, #021b79) !important;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.w114 {width: 114px !important; }
+.h23 {height: 23px !important; }
+.w23 {width: 23px !important; }
+
+.bottom-0 {bottom: 0px;}

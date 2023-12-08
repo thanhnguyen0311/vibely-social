@@ -1,0 +1,13 @@
+@media (min-width: 1400px) {
+    #middle {
+        max-width: 100%;
+        padding-left:50px
+    }
+}
+
+.avatar {
+    width: fit-content;
+    overflow: hidden;
+    object-fit: cover;
+    
+}

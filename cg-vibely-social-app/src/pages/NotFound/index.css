@@ -1,0 +1,108 @@
+.body-404 {
+ background: cadetblue;
+}
+
+
+.back-to-home {
+	position: fixed;
+	background: none;
+	border: none;
+	left: 95vh;
+	top:30vh
+  }
+  
+  .back-to-home .bloom-container {
+	position: absolute;
+	transition: all 0.2s ease-in-out;
+	border: none;
+	background: none;
+
+  }
+  
+  .back-to-home .bloom-container .back-to-home-container-main {
+	width: 110px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	display: grid;
+	place-content: center;
+	border-right: 5px solid white;
+	border-left: 5px solid rgba(128, 128, 128, 0.147);
+  }
+  
+  .back-to-home .bloom-container .back-to-home-container-main .back-to-home-inner {
+	height: 60px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	position: relative;
+	box-shadow: rgba(100, 100, 111, 0.5) -10px 5px 10px 0px;
+	transition: all 0.5s ease-in-out;
+  }
+  
+  .back-to-home .bloom-container .back-to-home-container-main .back-to-home-inner .back {
+	position: absolute;
+	inset: 0;
+	border-radius: 50%;
+	background: linear-gradient(60deg, rgb(1, 85, 103) 0%, rgb(147, 245, 255) 100%);
+  }
+  
+  .back-to-home .bloom-container .back-to-home-container-main .back-to-home-inner .front {
+	position: absolute;
+	inset: 1px;
+	border-radius: 50%;
+	background: linear-gradient(60deg, rgb(60, 245, 245) 0%, rgb(69, 199, 194) 100%);
+	display: grid;
+	place-content: center;
+  }
+  
+  .back-to-home .bloom-container .back-to-home-container-main .back-to-home-inner .front .svg {
+	fill: #ffffff;
+	opacity: 0.5;
+	width: 30px;
+	aspect-ratio: 1;
+	transform: rotate(45deg);
+	transition: all 0.2s ease-in;
+  }
+  
+  .back-to-home .bloom-container .back-to-home-container-main .back-to-home-glass {
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.888) 100%);
+	transform: translate(0%, -50%) rotate(0deg);
+	transform-origin: bottom center;
+	transition: all 0.5s ease-in-out;
+  }
+  
+  .back-to-home .bloom-container .bloom {
+	height: 1px;
+	width: 1px;
+	position: absolute;
+	background: white;
+  }
+  
+  .back-to-home .bloom-container .bloom1 {
+	top: 10px;
+	right: 20px;
+	box-shadow: rgb(255, 255, 255) 0px 0px 10px 10px, rgb(255, 255, 255) 0px 0px 20px 20px;
+  }
+  
+  .back-to-home .bloom-container .bloom2 {
+	bottom: 10px;
+	left: 20px;
+	box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 10px 10px, rgba(255, 255, 255, 0.5) 0px 0px 30px 20px;
+  }
+  
+  .back-to-home .bloom-container:hover {
+	transform: scale(1.1);
+  }
+  
+  .back-to-home .bloom-container:hover .back-to-home-container-main .back-to-home-glass {
+	transform: translate(0%, -40%);
+  }
+  
+  .back-to-home .bloom-container:hover .back-to-home-container-main .back-to-home-inner .front .svg {
+	opacity: 1;
+	filter: drop-shadow(0 0 10px white);
+  }
+  

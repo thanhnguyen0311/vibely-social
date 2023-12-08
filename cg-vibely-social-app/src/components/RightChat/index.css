@@ -1,0 +1,7 @@
+.right-chat-img{
+    max-height: 40px !important;
+    min-height: 40px !important;
+    width: 40px !important;
+    object-fit: cover;
+    border-radius: 50%;
+}
